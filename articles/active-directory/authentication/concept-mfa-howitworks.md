@@ -19,7 +19,7 @@ ms.collection: M365-identity-device-management
 
 Multi-factor authentication is a process in which users are prompted during the sign-in process for an additional form of identification, such as a code on their cellphone or  a fingerprint scan.
 
-If you only use a password to authenticate a user, it leaves an insecure vector for attack. If the password is weak or has been exposed elsewhere, an attacker could be using it to gain access. When you require a second form of authentication, security is increased because this additional factor isn't something that's easy for an attacker to obtain or duplicate.
+If you only use a password to authenticate a user, it leaves an insecure factor for attack. If the password is weak or has been exposed elsewhere, an attacker could be using it to gain access. When you require a second form of authentication, security is increased because this additional factor isn't something that's easy for an attacker to obtain or duplicate.
 
 ![Conceptual image of the various forms of multi-factor authentication.](./media/concept-mfa-howitworks/methods.png)
 
