@@ -9,7 +9,7 @@ ms.service: data-factory
 ms.subservice: data-movement
 ms.custom:
 ms.topic: conceptual
-ms.date: 01/20/2023
+ms.date: 08/08/2023
 ---
 
 # Change data capture resource overview
@@ -25,22 +25,27 @@ The new Change Data Capture resource in ADF allows for full fidelity change data
 
 :::image type="content" source="media/adf-cdc/change-data-capture-resource-1.png" alt-text="Screenshot of new top-level resource in Factory Resources panel.":::
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE5geIG]
+
 ## Supported data sources
 
 * Avro
 * Azure Cosmos DB (SQL API)
 * Azure SQL Database
+* Azure SQL Managed Instance
 * Delimited Text
 * JSON
 * ORC
 * Parquet
 * SQL Server
 * XML
+* Snowflake
 
 ## Supported targets
 
 * Avro
 * Azure SQL Database
+* SQL Managed Instance
 * Delimited Text
 * Delta
 * JSON
@@ -49,12 +54,13 @@ The new Change Data Capture resource in ADF allows for full fidelity change data
 
 ## Known limitations
 * Currently, when creating source/target mappings, each source and target is only allowed to be used once. 
-* Continuous, real-time streaming is coming soon.
-* Allow schema drift is coming soon.
 * Complex types are currently unsupported.
+* Self-hosted integration runtime (SHIR) is currently unsupported.
 
 For more information on known limitations and troubleshooting assistance, please reference [this troubleshooting guide](change-data-capture-troubleshoot.md).
 
+> [!NOTE]
+> We always use the last published configuration when starting a CDC. For running CDCs, while your data is being processed, you will be billed 4 v-cores of General Purpose Data Flows.
 
 ## Next steps
 - [Learn how to set up a change data capture resource](how-to-change-data-capture-resource.md).
